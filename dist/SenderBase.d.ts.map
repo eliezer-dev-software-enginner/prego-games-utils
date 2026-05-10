@@ -1,0 +1,1 @@
+{"version":3,"file":"SenderBase.d.ts","sourceRoot":"","sources":["../src/SenderBase.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,IAAI,EAAE,MAAM,QAAQ,CAAC;AAEnC,8BAAsB,MAAM;IAC1B,QAAQ,CAAC,UAAU,CAAC,IAAI,EAAE,IAAI,GAAG,GAAG;IACpC,QAAQ,CAAC,QAAQ,CAAC,IAAI,EAAE,IAAI,GAAG,OAAO,CAAC,OAAO,CAAC;CAChD"}
