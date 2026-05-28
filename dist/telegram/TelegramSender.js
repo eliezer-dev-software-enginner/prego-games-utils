@@ -14,7 +14,13 @@ export class TelegramSender extends Sender {
                 ? 'Legendado'
                 : 'Original';
         const precoFormatado = `R$ ${post.preco?.toFixed(2)}`;
-        const comprarUrl = `${siteUrl}/roms/${post.id}`;
+        let comprarUrl;
+        if (post.isRom) {
+            comprarUrl = `${siteUrl}/roms/${post.id}`;
+        }
+        else {
+            comprarUrl = `${siteUrl}/packs/${post.id}`;
+        }
         const MAX_DESC = 200;
         const descricaoTruncada = post.descricao && post.descricao.length > MAX_DESC
             ? post.descricao.slice(0, MAX_DESC).trimEnd() + '…'

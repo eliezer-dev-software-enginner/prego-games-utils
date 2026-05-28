@@ -8,5 +8,6 @@ export type Post = {
     traduzido: boolean;
     dublado: boolean;
     preco: number;
+    isRom: boolean;
 };
 //# sourceMappingURL=Post.d.ts.map
