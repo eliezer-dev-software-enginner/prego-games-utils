@@ -29,6 +29,7 @@ export class TelegramSender extends Sender {
       ? `${siteUrl}/roms/${post.id}`
       : `${siteUrl}/packs/${post.id}`;
     const comprarUrl = `${proxyBase}${encodeURIComponent(targetUrl)}`;
+    const baixarUrl = `${proxyBase}${encodeURIComponent(post.shortUrl)}`;
 
     const MAX_DESC = 200;
     const descricaoTruncada =
@@ -47,7 +48,7 @@ export class TelegramSender extends Sender {
       .join("\n");
 
     const inline_keyboard = [
-      [{ text: "⚡ Baixar grátis", url: post.shortUrl }],
+      [{ text: "⚡ Baixar grátis", url: baixarUrl }],
       [{ text: "🛒 Comprar acesso vitalício", url: comprarUrl }],
     ];
 
