@@ -1,5 +1,5 @@
-import type { Post } from '../Post';
-import { Sender } from '../SenderBase';
+import type { Post } from "../Post";
+import { Sender } from "../SenderBase";
 export type TelegramSenderConfig = {
     botToken: string;
     channelId: string;
